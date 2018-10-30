@@ -44,8 +44,8 @@ function play() {
   let dateB = new Date();
   var timi = (dateB - dateA) / 1000;
   var medal = rettSvor / timi;
-  alert('Þú svaraðir ' + rettSvor + ' svörum af ' + GAMES_TO_PLAY + ' rétt á ' + timi + ' sekúndum \n' +
-        'Meðalrétt svör á sekúndu eru ' + medal);
+  alert('Þú svaraðir ' + rettSvor + ' svörum af ' + GAMES_TO_PLAY + ' rétt á ' + timi.toFixed(2) + ' sekúndum \n' +
+        'Meðalrétt svör á sekúndu eru ' + medal.toFixed(2));
 }
 
 /**
